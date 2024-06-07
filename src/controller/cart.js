@@ -107,7 +107,7 @@ const placeOrder = async (req, res, next) => {
   const orderTime = formatDate(new Date());
 
   let orderCustomerID = customerID;
-  let price = 0
+  let price = 0;
 
   try {
     if (cartID) {
@@ -219,28 +219,27 @@ const deleteItemInOrder = async (cartID, productID) => {
     const cartItem = await db["cart"].findOne({ _id: cartID });
 
     if (!cartItem) {
-      throw new Error('Cart not found')
+      throw new Error("Cart not found");
     }
 
-    const productExists = cartItem.product.some(p => p._id === productID)
+    const productExists = cartItem.product.some((p) => p._id === productID);
 
     if (!productExists) {
-      throw new Error("Product not found in cart")
+      throw new Error("Product not found in cart");
     }
 
-    const updateProducts = cartItem.product.filter(p => p._id !== productID)
+    const updateProducts = cartItem.product.filter((p) => p._id !== productID);
 
-    console.log("updateProducts", updateProducts)
+    console.log("updateProducts", updateProducts);
 
     const numUpdated = await db["cart"].update(
       { _id: cartID },
       { $set: { product: updateProducts } },
       {}
     );
-
   } catch (error) {
-    console.error("Error removing specific item from cart", error)
-    throw error
+    console.error("Error removing specific item from cart", error);
+    throw error;
   }
 };
 
