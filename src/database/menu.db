@@ -1,11 +1,12 @@
 {"title":"Cortado","desc":"En cortado med lika delar espresso och varm mjölk.","price":33,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"0Gu3mPAbONk1hy4P"}
 {"title":"Flat White","desc":"En platt vit med silkeslen mikroskum och stark espresso.","price":46,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"3IBqddqDtbAtIi2E"}
 {"title":"Mocha","desc":"En söt mocha med choklad och espresso.","price":55,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"6ymMjHWMpLGChmJ6"}
-{"title":"Hästkaffe","desc":"Bra kaffe för hästar","price":9,"createdAt":"2024-06-07 23:07","modifiedAt":"","_id":"AHV33KMMa6iznR6W"}
 {"title":"Espresso","desc":"En stark och aromatisk enkel espresso.","price":25,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"QnMf8p1P9ZF9Oerm"}
 {"title":"Americano","desc":"En espresso utspädd med varmt vatten.","price":35,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"SjwGh9EVaYWtIzs7"}
+{"title":"Black coffee","desc":"Gives you the boost you need","price":9,"createdAt":"2024-06-10 08:46","modifiedAt":"","_id":"Swv8ztoNFX0WJHNz"}
 {"title":"Bryggkaffe","desc":"Bryggd på månadens bönor.","price":39,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"XxbJYtuWvSY6xPu0"}
 {"title":"Latte","desc":"En len latte med perfekt balanserad mjölk och espresso.","price":49,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"ZVjipnljyz05sa1O"}
 {"title":"Macchiato","desc":"En macchiato med en skvätt mjölk.","price":30,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"dy1JqGCeAYWaJqri"}
 {"title":"Cold Brew","desc":"Kallbryggt kaffe för en uppfriskande smakupplevelse.","price":42,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"lN2tmDgmhBl1Mc6k"}
 {"title":"Cappuccino","desc":"En krämig cappuccino med skummad mjölk.","price":45,"createdAt":"2024-05-20 12:00","modifiedAt":"2024-05-21 12:05","_id":"nG7UZ7wTTM0wm64Q"}
+{"title":"Black coffee","desc":"Gives you the boost you need","price":9,"createdAt":"2024-06-10 08:16","modifiedAt":"","_id":"rD4NPaGsYlRBu7m9"}

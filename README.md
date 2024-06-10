@@ -1,5 +1,58 @@
 # Airbean-API - Individual
 
+## Installation Instructions
+
+### Prerequisites
+
+#### Node.js and npm
+
+- Ensure that you have Node.js installed. You can download it from Node.js official website.
+- npm (Node Package Manager) comes with Node.js. You can verify the installation by running:
+
+```sh
+node -v
+npm -v
+```
+
+#### Git
+
+- Make sure you have Git installed to clone the repository. You can download it from Git official website.
+- Verify the installation by running:
+
+```sh
+git --version
+```
+
+#### Cloning the Repository
+
+1. Clone the repository to your local machine using the following command:
+
+```sh
+git clone https://github.com/abergstream/school-individual-project-nodejs-airbean-api.git
+```
+
+2. Navigate into the project directory:
+
+```sh
+cd school-individual-project-nodejs-airbean-api
+```
+
+#### Installing Dependencies
+
+1. Install the required dependencies by running:
+
+```sh
+npm install
+```
+
+#### Running the Application
+
+1. Start the application with the development script:
+
+```sh
+npm run dev
+```
+
 ## Admin
 
 ### Login restricted
@@ -19,6 +72,7 @@ Not authorized admin
 ##### BODY
 
 ```
+// Use these settings to test
 {
   "username": "admin",
   "password": "password"
