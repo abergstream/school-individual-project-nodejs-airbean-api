@@ -39,7 +39,7 @@ Wrong username or password
 
 ## Product
 
-#### POST - /admin/product
+### POST - /admin/product
 
 ##### BODY
 
