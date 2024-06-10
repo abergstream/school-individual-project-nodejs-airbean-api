@@ -14,10 +14,7 @@ Not authorized admin
 
 ### Login
 
-<div style="background-color: #e8f6f0; border: 1px solid #49cc90; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
-<span style="background-color:#49cc90; padding: .25rem .5rem; color: #FFF;">POST</span>
-<div style="font-weight: 600;">/admin/login</div>
-</div>
+### POST - /admin/login
 
 ##### BODY
 
@@ -42,10 +39,7 @@ Wrong username or password
 
 ## Product
 
-<div style="background-color: #e8f6f0; border: 1px solid #49cc90; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
-<span style="background-color:#49cc90; padding: .25rem .5rem; color: #FFF;">POST</span>
-<div style="font-weight: 600;">/admin/product</div>
-</div>
+#### POST - /admin/product
 
 ##### BODY
 
@@ -63,12 +57,7 @@ Wrong username or password
 Product Black coffee added
 ```
 
-
-
-<div style="background-color: #fbf1e6; border: 1px solid #fca130; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
-<span style="background-color:#fca130; padding: .25rem .5rem; color: #FFF;">PUT</span>
-<div style="font-weight: 600;">/admin/product</div>
-</div>
+### PUT - /admin/product
 
 ##### BODY
 
@@ -87,12 +76,7 @@ Product Black coffee added
 Product tmzpFat7n8gi8XtJ changed
 ```
 
-
-
-<div style="background-color: #fbe7e7; border: 1px solid #f93e3e; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
-<span style="background-color:#f93e3e; padding: .25rem .5rem; color: #FFF;">DELETE</span>
-<div style="font-weight: 600;">/admin/product</div>
-</div>
+### DELETE /admin/product
 
 ##### BODY
 
@@ -114,12 +98,7 @@ Product tmzpFat7n8gi8XtJ deleted
 Could not find the product
 ```
 
-
-
-<div style="background-color: #e8f6f0; border: 1px solid #49cc90; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
-<span style="background-color:#49cc90; padding: .25rem .5rem; color: #FFF;">POST</span>
-<div style="font-weight: 600;">/admin/promotion</div>
-</div>
+### POST - /admin/promotion
 
 ##### BODY
 
@@ -147,12 +126,7 @@ Could not find the product
 Promotion Campaign name added
 ```
 
-
-
-<div style="background-color: #fbe7e7; border: 1px solid #f93e3e; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
-<span style="background-color:#f93e3e; padding: .25rem .5rem; color: #FFF;">DELETE</span>
-<div style="font-weight: 600;">/admin/promotion</div>
-</div>
+### DELETE - /admin/promotion
 
 ##### BODY
 
