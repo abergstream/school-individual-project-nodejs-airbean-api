@@ -1,5 +1,7 @@
 # Airbean-API - Individual
 
+<a href="#delete-adminproduct">Teeeest</a>
+
 ## Admin
 
 ### Login restricted
