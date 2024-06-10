@@ -173,6 +173,7 @@ Promotion nXNFwX4J3cqpXMYS could not be found
         "_id": "3IBqddqDtbAtIi2E"
     },
     [...]
+]
 ```
 
 ## 2.

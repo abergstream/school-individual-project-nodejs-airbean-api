@@ -18,28 +18,26 @@ const addPromotionMiddleware = async (req, res, next) => {
     const productID = products[i].productID;
 
     if (quantity && quantity <= 0) {
-      return res
-        .status(400)
-        .json({ error: "Quantity can not be negative or zero" });
+      return res.status(400).send("Quantity can not be negative or zero");
     }
     try {
       const productQuery = await db.menu.findOne({ _id: productID });
 
       if (!productQuery) {
-        return res.status(404).json({
-          error: "One or more products could not be found in the menu",
-        });
+        return res
+          .status(404)
+          .send("One or more products could not be found in the menu");
       }
       totalPrice += productQuery.price;
     } catch (error) {
       console.error("Error querying the database:", error);
-      return res.status(500).json({ error: "Internal server error" });
+      return res.status(500).send("Internal server error");
     }
   }
   if (price > totalPrice) {
-    return res.status(400).json({
-      error: "Promotion price is higher than original price",
-    });
+    return res
+      .status(400)
+      .send("Promotion price is higher than original price");
   }
   next();
 };
@@ -48,9 +46,7 @@ const delPromotionMiddleware = async (req, res, next) => {
   const { promotionID } = req.body;
   const promotionQuery = await db.promotions.findOne({ _id: promotionID });
   if (!promotionQuery) {
-    return res.status(400).json({
-      error: `Promotion ${promotionID} could not be found`,
-    });
+    return res.status(400).send(`Promotion ${promotionID} could not be found`);
   }
   next();
 };
