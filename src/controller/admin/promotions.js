@@ -1,15 +1,10 @@
 import db from "../../database/database.js";
+import getDateTime from "./service.js";
 
 const addPromotion = (req, res, next) => {
   const { title, products, price } = req.body;
   const date = new Date();
-  const currentDateTime = date.toLocaleTimeString([], {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+  const currentDateTime = getDateTime();
   const data = {
     title: title,
     createdAt: currentDateTime,
@@ -23,7 +18,7 @@ const addPromotion = (req, res, next) => {
 const delPromotion = (req, res, next) => {
   const { promotionID } = req.body;
   db.promotions.remove({ _id: promotionID });
-  res.send(`Promotion deleted`);
+  res.send(`Promotion ${promotionID} deleted`);
 };
 
 export { addPromotion, delPromotion };

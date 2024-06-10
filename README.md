@@ -1,4 +1,178 @@
-# Airbean-API - Grupp 2
+# Airbean-API - Individual
+
+## Admin
+
+### Login restricted
+
+All admin endpoints is restricted by an admin login.
+
+##### Response if not logged in
+
+```
+Not authorized admin
+```
+
+### Login
+
+<div style="background-color: #e8f6f0; border: 1px solid #49cc90; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
+<span style="background-color:#49cc90; padding: .25rem .5rem; color: #FFF;">POST</span>
+<div style="font-weight: 600;">/admin/login</div>
+</div>
+
+##### BODY
+
+```
+{
+  "username": "admin",
+  "password": "password"
+}
+```
+
+##### RESPONSE
+
+```
+Logged in as admin
+```
+
+##### ERROR
+
+```
+Wrong username or password
+```
+
+## Product
+
+<div style="background-color: #e8f6f0; border: 1px solid #49cc90; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
+<span style="background-color:#49cc90; padding: .25rem .5rem; color: #FFF;">POST</span>
+<div style="font-weight: 600;">/admin/product</div>
+</div>
+
+##### BODY
+
+```
+{
+  "title": "Black coffee", // Required
+  "desc": "Gives you the boost you need", // Required
+  "price": 9 // Required
+}
+```
+
+##### RESPONSE
+
+```
+Product Black coffee added
+```
+
+
+
+<div style="background-color: #fbf1e6; border: 1px solid #fca130; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
+<span style="background-color:#fca130; padding: .25rem .5rem; color: #FFF;">PUT</span>
+<div style="font-weight: 600;">/admin/product</div>
+</div>
+
+##### BODY
+
+```
+{
+    "productID": "tmzpFat7n8gi8XtJ", // Mandatory
+    "title": "New title", // Optional
+    "desc": "New description", // Optional
+    "price": 99 // Optional
+}
+```
+
+##### RESPONSE
+
+```
+Product tmzpFat7n8gi8XtJ changed
+```
+
+
+
+<div style="background-color: #fbe7e7; border: 1px solid #f93e3e; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
+<span style="background-color:#f93e3e; padding: .25rem .5rem; color: #FFF;">DELETE</span>
+<div style="font-weight: 600;">/admin/product</div>
+</div>
+
+##### BODY
+
+```
+{
+  "productID" : "tmzpFat7n8gi8XtJ"
+}
+```
+
+##### RESPONSE
+
+```
+Product tmzpFat7n8gi8XtJ deleted
+```
+
+##### ERROR
+
+```
+Could not find the product
+```
+
+
+
+<div style="background-color: #e8f6f0; border: 1px solid #49cc90; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
+<span style="background-color:#49cc90; padding: .25rem .5rem; color: #FFF;">POST</span>
+<div style="font-weight: 600;">/admin/promotion</div>
+</div>
+
+##### BODY
+
+```
+{
+    "title": "Campaign name", // Mandatory
+    "products": // Mandatory, at least 1 item
+    [
+        {
+            "productID":"dy1JqGCeAYWaJqri",
+            "quantity": 1
+        },
+        {
+            "productID": "XxxbJYtuWvSY6xPu0",
+            "quantity": 1
+        }
+    ],
+    "price": 40 // Mandatory
+}
+```
+
+##### RESPONSE
+
+```
+Promotion Campaign name added
+```
+
+
+
+<div style="background-color: #fbe7e7; border: 1px solid #f93e3e; padding: .5rem; display: flex; gap: 1rem; align-items: center;">
+<span style="background-color:#f93e3e; padding: .25rem .5rem; color: #FFF;">DELETE</span>
+<div style="font-weight: 600;">/admin/promotion</div>
+</div>
+
+##### BODY
+
+```
+{
+  "promotionID": "nXNFwX4J3cqpXMYS"
+}
+```
+
+##### RESPONSE
+
+```
+Promotion nXNFwX4J3cqpXMYS deleted
+```
+
+##### ERROR
+
+```
+Promotion nXNFwX4J3cqpXMYS could not be found
+```
 
 ## 1.
 
@@ -261,7 +435,7 @@ Routes?
 }
 ```
 
-#### GET - /orders/:id   
+#### GET - /orders/:id
 
 ##### Response
 
@@ -298,7 +472,7 @@ Routes?
 
 ## 10.
 
-#### GET - /orders/confirmation/:id    (order-id)
+#### GET - /orders/confirmation/:id (order-id)
 
 ##### Response
 
