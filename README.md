@@ -98,6 +98,8 @@ Product tmzpFat7n8gi8XtJ deleted
 Could not find the product
 ```
 
+## Promotion
+
 ### POST - /admin/promotion
 
 ##### BODY
